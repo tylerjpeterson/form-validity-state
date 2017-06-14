@@ -44,7 +44,7 @@ formState.initialize();
 | --- | --- | --- | --- |
 | options.invalidClass | <code>string</code> | <code>"invalid"</code> | Class to be applied to invalid forms and inputs |
 | options.selector | <code>string</code> | <code>"form[data-validation-state]"</code> | Selector used to query participating form elements |
-| options.autoInitialize | <code>boolean</code> | <code>true</code> | Dom is queried upon instantiation; set to false if you need to capture the initial "invalidated" event |
+| options.autoInitialize | <code>boolean</code> | <code>true</code> | DOM is queried upon instantiation; set to false if you need to capture the initial "invalidated" event |
 
 
 
@@ -67,6 +67,7 @@ The invalidated event is broadcast when a form's validity state changes from val
 | data.evt | <code>event</code> | Original event |
 | data.formObject | <code>object</code> | formObject of input that event was triggered from |
 
+***
 
 #### `submit-blocked`
 The submit-blocked event is broadcast when a form's submission is prevented because it is in an invalid state
@@ -77,6 +78,7 @@ The submit-blocked event is broadcast when a form's submission is prevented beca
 | data.evt | <code>event</code> | Original event |
 | data.formObject | <code>object</code> | formObject of input that event was triggered from |
 
+***
 
 #### `submit-allowed`
 The submit-allowed event is broadcast when a form's submission is allowed because it is in a valid state
@@ -87,6 +89,7 @@ The submit-allowed event is broadcast when a form's submission is allowed becaus
 | data.evt | <code>event</code> | Original event |
 | data.formObject | <code>object</code> | formObject of input that event was triggered from |
 
+***
 
 #### `change`
 The change event is broadcast when a field's "change" event is triggered
@@ -97,6 +100,7 @@ The change event is broadcast when a field's "change" event is triggered
 | data.evt | <code>event</code> | Original event |
 | data.formObject | <code>object</code> | formObject of input that event was triggered from |
 
+***
 
 #### `input`
 The input event is broadcast when a field's "input" event is triggered
@@ -107,6 +111,7 @@ The input event is broadcast when a field's "input" event is triggered
 | data.evt | <code>event</code> | Original event |
 | data.formObject | <code>object</code> | formObject of input that event was triggered from |
 
+***
 
 #### `form-validated`
 The form-validated event is broadcast when a form's validity state changes from invalid to valid
@@ -117,6 +122,7 @@ The form-validated event is broadcast when a form's validity state changes from 
 | data.evt | <code>event</code> | Original event |
 | data.formObject | <code>object</code> | formObject of input that event was triggered from |
 
+***
 
 #### `form-invalidated`
 The form-invalidated event is broadcast when a form's validity state changes from valid to invalid
@@ -127,6 +133,7 @@ The form-invalidated event is broadcast when a form's validity state changes fro
 | data.evt | <code>event</code> | Original event |
 | data.formObject | <code>object</code> | formObject of input that event was triggered from |
 
+***
 
 #### `field-validated`
 The field-validated event is broadcast when a field's validity state changes from invalid to valid
@@ -137,6 +144,7 @@ The field-validated event is broadcast when a field's validity state changes fro
 | data.evt | <code>event</code> | Original event |
 | data.formObject | <code>object</code> | formObject of input that event was triggered from |
 
+***
 
 #### `field-invalidated`
 The field-invalidated event is broadcast when a field's validity state changes from valid to invalid
