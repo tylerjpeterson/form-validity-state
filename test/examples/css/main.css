@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial;
+	font-weight: lighter;
+}
+
+#reporter {
+	background-color: #000;
+	color: #fff;
+	padding-top: 1em;
+	position: fixed;
+	overflow-y: scroll;
+	right: 0;
+	top: 0;
+	width: 260px;
+	padding: 2px 10px;
+	text-align: left;
+	line-height: 2.2;
+	font-size: 11px;
+	max-height: 100vh;
+	font-family: 'Courier New';
+	white-space: nowrap;
+}
+
+hr {
+	box-shadow: none;
+	border: none;
+	background-color: #fff;
+	opacity: 0.5;
+	height: 1px;
+}
+
+body {
+	text-align: center;
+	color: #333;
+}
+
+h1 {
+	font-family: 'Helvetica Neue';
+	margin: 1em auto 0;
+	font-weight: 200;
+	font-size: 3em;
+}
+
+form {
+	width: 400px;
+	margin: 1em auto;
+	border: 3px solid #0f0;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: rgba(0, 255, 0, 0.05);
+}
+
+form.invalid {
+	border: 3px solid #f00;
+	background-color: rgba(255, 0, 0, 0.025);
+}
+
+label {
+	display: block;
+	text-transform: uppercase;
+	text-align: left;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin: 0.5em 0 3em 0em;
+	border-bottom: 1px solid #ddd;
+	font-size: 0.7em;
+	font-weight: bold;
+}
+
+label span {
+	display: block;
+	opacity: 0.5;
+	float: right;
+}
+
+select,
+input {
+	box-sizing: border-box;
+	height: 36px;
+	padding: 0 10px;
+	border-radius: 3px;
+	box-shadow: none;
+	border: 1px solid #ccc;
+	width: 100%;
+	font-size: 0.9em;
+}
+
+form input[type="submit"] {
+	background-color: #eee;
+}
+
+form.invalid input[type="submit"] {
+	background-color: #fdd;
+	border-color: #f00;
+}
+
+select.invalid,
+input.invalid {
+	background-color: #fdd;
+	border: 1px solid #f00;
+}

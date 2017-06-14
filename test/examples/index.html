@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FormValidityState</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1>FormValidityState</h1>
+	<p id="reporter"> </p>
+	<form action="#" method="GET" onsubmit="arguments[0].preventDefault();" data-validation-state novalidate>
+		<div>
+			<input type="checkbox" name="checkbox-input" required>
+			<label>required checkbox<span>Must be checked</span></label>
+		</div>
+		<div>
+			<input type="text" name="text-input" required>
+			<label>required text input<span>Must not be blank</span></label>
+		</div>
+		<div>
+			<select name="select-input" required>
+				<option value="">invalid</option>
+				<option value="select-valid">valid</option>
+			</select>
+			<label>required select input<span>Must not be "invalid"</span></label>
+		</div>
+		<div>
+			<input type="number" name="number-input" min="0" max="10" step="1" value="12" required>
+			<label>required number input<span>Must be less than 11</span></label>
+		</div>
+		<div>
+			<input type="date" name="date-input" value="" required>
+			<label>required date input <span>Must be a valid date</span></label>
+		</div>
+		<div>
+			<input type="email" name="email-input" value="" required>
+			<label>required email input<span>Must be a valid email address</span></label>
+		</div>
+		<div>
+			<input type="submit" value="submit form">
+		</div>
+	</form>
+	<script src="../../tmp/demo.js"></script>
+</body>
+</html>
