@@ -1,6 +1,6 @@
 {
   "name": "form-validity-state",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "EventEmitter that monitors a form element's validity, applying classes and emitting events accordingly.",
   "author": "Tyler Peterson <tylerjpeterson@gmail.com>",
   "main": "index.js",
