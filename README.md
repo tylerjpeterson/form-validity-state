@@ -1,3 +1,5 @@
+![100% test coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)
+
 # formValidityState
 > EventEmitter that monitors a form element's validity, applying classes and emitting events accordingly.
 
